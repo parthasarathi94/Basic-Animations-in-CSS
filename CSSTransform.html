@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform Prop</title>
+    <style>
+        .container{
+            background-color: aqua;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            border: 2px solid rgb(29, 236, 22);
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(229, 54, 156);
+            height: 300px;
+            width: 300px;
+            transition: all 1s ease-in-out;
+        }
+        .box:hover{
+            transform: rotate(360deg);
+            /* transform: skew(30deg); */
+            /* transform: scale(2); */
+            /* transform: translate(x,y); */
+            
+        }
+        .circle{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: yellow;
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="circle">X</div>
+        </div>
+    </div>
+</body>
+</html>
